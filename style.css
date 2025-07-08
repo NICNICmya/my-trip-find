@@ -49,7 +49,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 
     /* 🔧 추가된 부분 */
-    max-width: 960px;
+    max-width: 800px;
     margin: 40px auto;
 }
 
