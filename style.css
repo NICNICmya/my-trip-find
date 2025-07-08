@@ -49,8 +49,12 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 
     /* 🔧 추가된 부분 */
-    max-width: 800px;
+    max-width: 750px;
     margin: 40px auto;
+    
+    /* 🔧 아래 추가 */
+    text-align: center;
+    align-items: center;
 }
 
 .hero-content {
