@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이번 생에 가야 할 여행지 찾기</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 시작 화면 -->
+        <div id="start-screen" class="screen active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="main-title">이번 생에 가야 할<br>여행지 찾기</h1>
+                    <p class="subtitle">15개의 질문으로 알아보는 나만의 여행지</p>
+                    <button id="start-btn" class="start-button">테스트 시작하기</button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-images">
+                        <img src="images/paris.jpg" alt="파리" class="float-img img1">
+                        <img src="images/santorini.webp" alt="산토리니" class="float-img img2">
+                        <img src="images/bali.jpg" alt="발리" class="float-img img3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 질문 화면 -->
+        <div id="question-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+                <span id="question-counter" class="question-counter">1 / 15</span>
+            </div>
+            
+            <div class="question-container">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="answers" class="answers-container"></div>
+            </div>
+        </div>
+
+        <!-- 결과 화면 -->
+        <div id="result-screen" class="screen">
+            <div class="result-container">
+                <div class="result-image-container">
+                    <img id="result-image" src="" alt="여행지" class="result-image">
+                    <div class="result-overlay">
+                        <h2 id="result-title" class="result-title"></h2>
+                        <p id="result-description" class="result-description"></p>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button id="restart-btn" class="action-button primary">다시 테스트하기</button>
+                    <button id="share-btn" class="action-button secondary">결과 공유하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
