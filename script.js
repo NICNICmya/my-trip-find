@@ -143,7 +143,7 @@ const results = [
     {
         title: "자연을 닮은 당신, 베트남 다낭",
         description: "푸른 바다와 자연이 어우러진 다낭에서 마음의 평화를 찾으세요. 계획적이고 안정적인 당신에게 완벽한 힐링 여행지입니다.",
-        image: "images/danang.png",
+        image: "images/danang.jpg",
         type: "A"
     },
     {
@@ -211,7 +211,7 @@ const results = [
     {
         title: "고요한 것을 좋아하는 당신, 아이슬란드 레이캬비크",
         description: "얼음과 불, 고요의 미학을 레이캬비크에서 경험하세요. 자유롭고 독특한 경험을 추구하는 당신을 위한 신비로운 도시입니다.",
-        image: "images/reykjavik.png",
+        image: "images/reykjavik.jpg",
         type: "B"
     },
 
@@ -237,7 +237,7 @@ const results = [
     {
         title: "로맨티스트, 그리스 산토리니",
         description: "사랑은 푸른 바다, 산토리니에서 피어납니다. 로맨틱하고 감성적인 당신을 위한 꿈같은 여행지입니다.",
-        image: "images/santorini.webp",
+        image: "images/santorini.jpg",
         type: "C"
     },
     {
@@ -269,7 +269,7 @@ const results = [
     {
         title: "파티러버, 브라질 리우데자네이루",
         description: "춤추는 밤, 리우는 당신의 무대입니다. 열정적이고 활기찬 당신을 위한 최고의 파티 도시입니다.",
-        image: "images/rio.webp",
+        image: "images/rio.jpg",
         type: "D"
     },
     {
