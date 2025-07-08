@@ -6,62 +6,8 @@
     <title>이번 생에 가야 할 여행지 찾기</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* 광고 관련 스타일 */
-        .top-fixed-ad {
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 9999;
-            width: 728px; /* 기존 300px → 더 큰 광고 사이즈로 변경 */
-            height: 90px;  /* 기존 250px → 높이를 표준 사이즈에 맞게 조정 */
-            background: #f8f8f8;
-            text-align: center;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .right-fixed-ad {
-            position: fixed;
-            top: 100px;
-            right: 10px;
-            width: 160px;
-            height: 600px;
-            background: #f8f8f8;
-            border: 1px dashed #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-        }
-
-        @media (max-width: 1024px) {
-            .right-fixed-ad {
-                display: none;
-            }
-        }
-    </style>
 </head>
 <body>
-
-    <!-- 상단 고정 광고 -->
-    <div class="top-fixed-ad">
-        <ins class="kakao_ad_area" style="display:none;"
-            data-ad-unit="DAN-TrQYcN1huRi681Kp"
-            data-ad-width="300"
-            data-ad-height="250"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    </div>
-
-    <!-- 우측 고정 광고 -->
-    <div class="right-fixed-ad">
-        <ins class="kakao_ad_area" style="display:none;"
-            data-ad-unit="DAN-H6dQDUjP1bxurEXC"
-            data-ad-width="160"
-            data-ad-height="600"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    </div>
-
     <div class="container">
         <!-- 시작 화면 -->
         <div id="start-screen" class="screen active">
