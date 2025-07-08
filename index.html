@@ -6,8 +6,63 @@
     <title>이번 생에 가야 할 여행지 찾기</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 광고 관련 스타일 */
+        .top-fixed-ad {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            width: 100%;
+            max-width: 320px;
+            height: 50px;
+            background: #f8f8f8;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .right-fixed-ad {
+            position: fixed;
+            top: 100px;
+            right: 10px;
+            width: 160px;
+            height: 600px;
+            background: #f8f8f8;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+
+        @media (max-width: 1024px) {
+            .right-fixed-ad {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- 상단 고정 광고 -->
+    <div class="top-fixed-ad">
+        <ins class="kakao_ad_area" style="display:none;"
+            data-ad-unit="DAN-TrQYcN1huRi681Kp"
+            data-ad-width="320"
+            data-ad-height="50"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
+
+    <!-- 우측 고정 광고 -->
+    <div class="right-fixed-ad">
+        <ins class="kakao_ad_area" style="display:none;"
+            data-ad-unit="DAN-H6dQDUjP1bxurEXC"
+            data-ad-width="160"
+            data-ad-height="600"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
+
     <div class="container">
         <!-- 시작 화면 -->
         <div id="start-screen" class="screen active">
@@ -35,7 +90,6 @@
                 </div>
                 <span id="question-counter" class="question-counter">1 / 15</span>
             </div>
-            
             <div class="question-container">
                 <h2 id="question-text" class="question-text"></h2>
                 <div id="answers" class="answers-container"></div>
@@ -52,7 +106,6 @@
                         <p id="result-description" class="result-description"></p>
                     </div>
                 </div>
-                
                 <div class="result-actions">
                     <button id="restart-btn" class="action-button primary">다시 테스트하기</button>
                     <button id="share-btn" class="action-button secondary">결과 공유하기</button>
@@ -64,4 +117,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
